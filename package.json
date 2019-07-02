@@ -1,0 +1,20 @@
+{
+  "name": "yonny23",
+  "version": "1.0.0",
+  "description": "My book club app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node script1.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "github.com/yonny23/itc230-summerjs"
+  },
+  "keywords": [
+    "javascript",
+    "books",
+    "funny"
+  ],
+  "author": "Yonatan Gebreyesus",
+  "license": "ISC"
+}
