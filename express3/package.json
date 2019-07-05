@@ -1,0 +1,32 @@
+{
+    "name": "yonnyapp",
+    "version": "1.0.0",
+    "description": "This app wil be efficient and informative regarding anything NBA related",
+    "scripts": {
+      "start": "node script1.js",
+      "lint": "eslint **/*.js",
+      "test": "mocha test/**"
+    },
+    "devDependencies": {
+      "mocha": "^6.1.4"
+    },
+    "main": "index.js",
+    "dependencies": {
+      "express": "^4.17.1",
+      "mongoose": "^5.6.0"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/github.com/yonny23.git"
+    },
+    "keywords": [
+      "nba",
+      "javascript"
+    ],
+    "author": "Yonatan Gebreyesus",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/github.com/yonny23/issues"
+    },
+    "homepage": "https://github.com/github.com/yonny23#readme"
+  }
