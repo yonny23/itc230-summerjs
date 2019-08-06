@@ -1,12 +1,15 @@
-import { createServer } from "http";
-import { readFile } from "fs";
+const fs = require("fs"); 
+const http = require("http");  
+const book = require('./lib/books.js');
 
+//index.js import 
+var books = require("./lib/books.js")
 
 createServer(function(req,res)
  {                 
     console.log("url = " + req.url)
     console.log("dir = " + __dirname)
-    
+
     var path = req.url.toLowerCase()
     switch(path) {
             
