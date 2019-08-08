@@ -23,13 +23,23 @@ createServer(function(req,res)
                         res.end(data);
                     }
                     });
+
+                    app.get('/', function(req,res){
+                        res.type('text/html');
+                        res.sendFile(__dirname + '/public/home.html'); 
+                    });
+                    app.get('/delete', function(req,res){
+                        let result = book.delete(req.query.title); 
+                        res.render('delete', {title: req.query.title, result: result});
+                    });
+                    
     break;
             
     case '/about':
     res.writeHead(200, {'Content-Type': 'text/plain'});
     res.end('About Page');
     break;
-    
+
     default:
     res.writeHead(404, {'Content-Type': 'text/plain'});
     res.end('Not found');
